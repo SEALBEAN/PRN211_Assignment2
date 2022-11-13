@@ -16,6 +16,34 @@ namespace DataAccess.Repository
             _db = new();
         }
 
+        public void CreateMember(Member member)
+        {
+            if(member != null)
+            {
+                _db.Members.Add(member);
+                _db.SaveChanges();
+            }
+        }
+
+        public void DeleteMember(int memberId)
+        {
+            var member = _db.Members.Find(memberId);
+            if(member != null)
+            {
+                _db.Members.Remove(member);
+                _db.SaveChanges();
+            }
+        }
+
         public List<Member> GetMembers() => _db.Members.ToList();
+
+        public void UpdateMember(Member member)
+        {
+            if (member != null)
+            {
+                _db.Members.Update(member);
+                _db.SaveChanges();
+            }
+        }
     }
 }

@@ -19,5 +19,5 @@ public partial class Order
 
     public virtual ICollection<Detail> Details { get; } = new List<Detail>();
 
-    public virtual Member Member { get; set; }
+    public virtual Member Member { get; set; } = null!;
 }
