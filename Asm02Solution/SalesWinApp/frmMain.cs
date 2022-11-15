@@ -14,7 +14,7 @@ namespace SalesWinApp
     public partial class frmMain : Form
     {
         private readonly IMemberRepo _memberAccount = new MemberRepo();
-        public string acc;
+        public static string acc;
         public frmMain()
         {
             InitializeComponent();
