@@ -1,4 +1,5 @@
-﻿using BusinessObject.Objects;
+﻿using System.Diagnostics.Metrics;
+using BusinessObject.Objects;
 
 namespace DataAccess.Repository;
 
@@ -18,17 +19,13 @@ public class ProductRepository : IProductRepository
         }
     }
 
-    public void DeleteProduct(int productId)
+    public void DeleteProduct(Product product)
     {
-        var product = _db.Products.Find(productId);
-        if (product != null)
-        {
-            _db.Products.Add(product);
-            _db.SaveChanges();
-        }
+        _db.Products.Remove(product);
+        _db.SaveChanges();
     }
 
-    public List<Product> GetProducts() => _db.Products.ToList();
+    public IEnumerable<Product> GetProducts() => _db.Products.ToList();
 
     public void UpdateProduct(Product product)
     {

@@ -25,17 +25,13 @@ namespace DataAccess.Repository
             }
         }
 
-        public void DeleteMember(int memberId)
+        public void DeleteMember(Member member)
         {
-            var member = _db.Members.Find(memberId);
-            if(member != null)
-            {
-                _db.Members.Remove(member);
-                _db.SaveChanges();
-            }
+            _db.Members.Remove(member);
+            _db.SaveChanges();
         }
 
-        public List<Member> GetMembers() => _db.Members.ToList();
+        public IEnumerable<Member> GetMembers() => _db.Members.ToList();
 
         public void UpdateMember(Member member)
         {

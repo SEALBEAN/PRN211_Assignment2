@@ -12,7 +12,7 @@ namespace SalesWinApp
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Environment.Exit(0);
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -40,13 +40,21 @@ namespace SalesWinApp
                     //check role admin
                     if (account.Email == "admin")
                     {
-                        frmMain frmMain = new frmMain();
+                        frmMain frmMain = new frmMain()
+                        {
+                            acc = account.Email,
+                        };
                         this.Hide();
                         frmMain.Show();
                     }
                     else
                     {
-                        MessageBox.Show("You are not allowed to access this function!");
+                        frmMainMember frmMainMember = new frmMainMember
+                        {
+                            acc = account.Email,
+                        };
+                        this.Hide();
+                        frmMainMember.Show();
                     }
                 }
 

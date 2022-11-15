@@ -4,8 +4,8 @@ namespace DataAccess.Repository;
 
 public interface IProductRepository
 {
-    List<Product> GetProducts();
+    IEnumerable<Product> GetProducts();
     void AddProduct(Product product);
     void UpdateProduct(Product product);
-    void DeleteProduct(int productId);
+    void DeleteProduct(Product product);
 }
