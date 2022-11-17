@@ -9,5 +9,5 @@ public interface IOrderDetailRepository
     void Add(Detail[] detail);
     void Update(Detail detail);
     void Update(Detail[] detail);
-    void Delete(int productId, int orderId);
+    void Delete(Detail detail);
 }

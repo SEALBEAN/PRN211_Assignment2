@@ -14,7 +14,7 @@ namespace SalesWinApp
 {
     public partial class frmAddNewProduct : Form
     {
-        private readonly IProductRepository _productRepo = new ProductRepository();
+        private IProductRepository _productRepo = new ProductRepository();
         public bool AddOrUpdate;
         public Product pro;
         public frmAddNewProduct()
@@ -52,13 +52,14 @@ namespace SalesWinApp
             }
             else
             {
+                _productRepo = new ProductRepository();
                 Product pro = new Product
                 {
                     ProductId = Int32.Parse(txtProductID.Text),
                     CategoryId = Int32.Parse(txtCategoryID.Text),
                     ProductName = txtProductName.Text,
                     Weight = txtWeight.Text,
-                    UnitPrice = Int32.Parse(txtUnitPrice.Text),
+                    UnitPrice = Decimal.Parse(txtUnitPrice.Text),
                     UnitsInStock = Int32.Parse(txtUnitStock.Text),
                 };
                 if (AddOrUpdate) //Add

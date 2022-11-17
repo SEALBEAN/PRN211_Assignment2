@@ -40,51 +40,53 @@
             this.lbWelcome = new System.Windows.Forms.Label();
             this.btnLogOut = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.lbPermission = new System.Windows.Forms.Label();
             this.btnViewOrderDetail = new System.Windows.Forms.Button();
-            this.btnViewAndOrder = new System.Windows.Forms.Button();
             this.btnUpdateProfile = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtCountry
             // 
-            this.txtCountry.Location = new System.Drawing.Point(166, 277);
+            this.txtCountry.Location = new System.Drawing.Point(159, 209);
+            this.txtCountry.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCountry.Name = "txtCountry";
             this.txtCountry.ReadOnly = true;
-            this.txtCountry.Size = new System.Drawing.Size(165, 27);
+            this.txtCountry.Size = new System.Drawing.Size(178, 23);
             this.txtCountry.TabIndex = 19;
             // 
             // txtCity
             // 
-            this.txtCity.Location = new System.Drawing.Point(166, 236);
+            this.txtCity.Location = new System.Drawing.Point(159, 178);
+            this.txtCity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCity.Name = "txtCity";
             this.txtCity.ReadOnly = true;
-            this.txtCity.Size = new System.Drawing.Size(165, 27);
+            this.txtCity.Size = new System.Drawing.Size(178, 23);
             this.txtCity.TabIndex = 18;
             // 
             // txtCompany
             // 
-            this.txtCompany.Location = new System.Drawing.Point(166, 195);
+            this.txtCompany.Location = new System.Drawing.Point(159, 147);
+            this.txtCompany.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCompany.Name = "txtCompany";
             this.txtCompany.ReadOnly = true;
-            this.txtCompany.Size = new System.Drawing.Size(165, 27);
+            this.txtCompany.Size = new System.Drawing.Size(178, 23);
             this.txtCompany.TabIndex = 17;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(166, 153);
+            this.txtEmail.Location = new System.Drawing.Point(159, 116);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.ReadOnly = true;
-            this.txtEmail.Size = new System.Drawing.Size(165, 27);
+            this.txtEmail.Size = new System.Drawing.Size(178, 23);
             this.txtEmail.TabIndex = 16;
             // 
             // lbCountry
             // 
             this.lbCountry.AutoSize = true;
             this.lbCountry.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbCountry.Location = new System.Drawing.Point(47, 273);
+            this.lbCountry.Location = new System.Drawing.Point(55, 206);
             this.lbCountry.Name = "lbCountry";
-            this.lbCountry.Size = new System.Drawing.Size(86, 28);
+            this.lbCountry.Size = new System.Drawing.Size(69, 21);
             this.lbCountry.TabIndex = 15;
             this.lbCountry.Text = "Country:";
             // 
@@ -92,9 +94,9 @@
             // 
             this.lbCity.AutoSize = true;
             this.lbCity.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbCity.Location = new System.Drawing.Point(47, 232);
+            this.lbCity.Location = new System.Drawing.Point(55, 175);
             this.lbCity.Name = "lbCity";
-            this.lbCity.Size = new System.Drawing.Size(50, 28);
+            this.lbCity.Size = new System.Drawing.Size(40, 21);
             this.lbCity.TabIndex = 14;
             this.lbCity.Text = "City:";
             // 
@@ -102,9 +104,9 @@
             // 
             this.lbCompany.AutoSize = true;
             this.lbCompany.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbCompany.Location = new System.Drawing.Point(47, 191);
+            this.lbCompany.Location = new System.Drawing.Point(55, 144);
             this.lbCompany.Name = "lbCompany";
-            this.lbCompany.Size = new System.Drawing.Size(100, 28);
+            this.lbCompany.Size = new System.Drawing.Size(80, 21);
             this.lbCompany.TabIndex = 13;
             this.lbCompany.Text = "Company:";
             // 
@@ -112,9 +114,9 @@
             // 
             this.lbEmail.AutoSize = true;
             this.lbEmail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbEmail.Location = new System.Drawing.Point(47, 149);
+            this.lbEmail.Location = new System.Drawing.Point(55, 113);
             this.lbEmail.Name = "lbEmail";
-            this.lbEmail.Size = new System.Drawing.Size(63, 28);
+            this.lbEmail.Size = new System.Drawing.Size(51, 21);
             this.lbEmail.TabIndex = 12;
             this.lbEmail.Text = "Email:";
             // 
@@ -122,9 +124,9 @@
             // 
             this.lbInfo.AutoSize = true;
             this.lbInfo.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbInfo.Location = new System.Drawing.Point(47, 102);
+            this.lbInfo.Location = new System.Drawing.Point(55, 77);
             this.lbInfo.Name = "lbInfo";
-            this.lbInfo.Size = new System.Drawing.Size(129, 31);
+            this.lbInfo.Size = new System.Drawing.Size(109, 25);
             this.lbInfo.TabIndex = 11;
             this.lbInfo.Text = "Profile Info:";
             // 
@@ -132,17 +134,18 @@
             // 
             this.lbWelcome.AutoSize = true;
             this.lbWelcome.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbWelcome.Location = new System.Drawing.Point(47, 47);
+            this.lbWelcome.Location = new System.Drawing.Point(55, 36);
             this.lbWelcome.Name = "lbWelcome";
-            this.lbWelcome.Size = new System.Drawing.Size(86, 38);
+            this.lbWelcome.Size = new System.Drawing.Size(67, 30);
             this.lbWelcome.TabIndex = 10;
             this.lbWelcome.Text = "Hello";
             // 
             // btnLogOut
             // 
-            this.btnLogOut.Location = new System.Drawing.Point(613, 366);
+            this.btnLogOut.Location = new System.Drawing.Point(309, 394);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(91, 33);
+            this.btnLogOut.Size = new System.Drawing.Size(80, 25);
             this.btnLogOut.TabIndex = 21;
             this.btnLogOut.Text = "Log Out";
             this.btnLogOut.UseVisualStyleBackColor = true;
@@ -150,49 +153,33 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(322, 366);
+            this.btnClose.Location = new System.Drawing.Point(146, 394);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(113, 33);
+            this.btnClose.Size = new System.Drawing.Size(99, 25);
             this.btnClose.TabIndex = 20;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // lbPermission
-            // 
-            this.lbPermission.AutoSize = true;
-            this.lbPermission.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbPermission.Location = new System.Drawing.Point(464, 64);
-            this.lbPermission.Name = "lbPermission";
-            this.lbPermission.Size = new System.Drawing.Size(182, 31);
-            this.lbPermission.TabIndex = 24;
-            this.lbPermission.Text = "Your permission:";
-            // 
             // btnViewOrderDetail
             // 
             this.btnViewOrderDetail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnViewOrderDetail.Location = new System.Drawing.Point(464, 192);
+            this.btnViewOrderDetail.Location = new System.Drawing.Point(106, 309);
+            this.btnViewOrderDetail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnViewOrderDetail.Name = "btnViewOrderDetail";
-            this.btnViewOrderDetail.Size = new System.Drawing.Size(240, 58);
+            this.btnViewOrderDetail.Size = new System.Drawing.Size(210, 44);
             this.btnViewOrderDetail.TabIndex = 23;
-            this.btnViewOrderDetail.Text = "View your Order Detail";
+            this.btnViewOrderDetail.Text = "View and Create Order";
             this.btnViewOrderDetail.UseVisualStyleBackColor = true;
-            // 
-            // btnViewAndOrder
-            // 
-            this.btnViewAndOrder.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnViewAndOrder.Location = new System.Drawing.Point(464, 119);
-            this.btnViewAndOrder.Name = "btnViewAndOrder";
-            this.btnViewAndOrder.Size = new System.Drawing.Size(240, 58);
-            this.btnViewAndOrder.TabIndex = 22;
-            this.btnViewAndOrder.Text = "View and Order Product";
-            this.btnViewAndOrder.UseVisualStyleBackColor = true;
+            this.btnViewOrderDetail.Click += new System.EventHandler(this.btnViewOrderDetail_Click);
             // 
             // btnUpdateProfile
             // 
-            this.btnUpdateProfile.Location = new System.Drawing.Point(120, 326);
+            this.btnUpdateProfile.Location = new System.Drawing.Point(128, 246);
+            this.btnUpdateProfile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUpdateProfile.Name = "btnUpdateProfile";
-            this.btnUpdateProfile.Size = new System.Drawing.Size(134, 33);
+            this.btnUpdateProfile.Size = new System.Drawing.Size(117, 25);
             this.btnUpdateProfile.TabIndex = 25;
             this.btnUpdateProfile.Text = "Update Profile";
             this.btnUpdateProfile.UseVisualStyleBackColor = true;
@@ -200,13 +187,11 @@
             // 
             // frmMainMember
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(780, 450);
+            this.ClientSize = new System.Drawing.Size(415, 449);
             this.Controls.Add(this.btnUpdateProfile);
-            this.Controls.Add(this.lbPermission);
             this.Controls.Add(this.btnViewOrderDetail);
-            this.Controls.Add(this.btnViewAndOrder);
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.txtCountry);
@@ -219,6 +204,7 @@
             this.Controls.Add(this.lbEmail);
             this.Controls.Add(this.lbInfo);
             this.Controls.Add(this.lbWelcome);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmMainMember";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Member Main Screen";
@@ -242,9 +228,7 @@
         private Label lbWelcome;
         private Button btnLogOut;
         private Button btnClose;
-        private Label lbPermission;
         private Button btnViewOrderDetail;
-        private Button btnViewAndOrder;
         private Button btnUpdateProfile;
     }
 }

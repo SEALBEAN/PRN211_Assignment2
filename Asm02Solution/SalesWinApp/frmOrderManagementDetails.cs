@@ -112,7 +112,8 @@ namespace SalesWinApp
                 {
                     foreach (DataGridViewRow row in selectedRows)
                     {
-                        orderDetailRepository.Delete((int)row.Cells[0].Value, Order.OrderId);
+                        IEnumerable<Detail> de = orderDetailRepository.GetDetails().Where(c => c.OrderId == Order.OrderId && c.ProductId == (int)row.Cells[0].Value);
+                        orderDetailRepository.Delete(de.First());
                     }
                     LoadDetail();
                     LoadTotal();
@@ -126,7 +127,8 @@ namespace SalesWinApp
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if(txtOrderID.Text == "" || cboMemberID.Text == "" || dgvDetails.RowCount == 0)
+            List<Detail> updateDetails = new List<Detail>();
+            if (txtOrderID.Text == "" || cboMemberID.Text == "" || dgvDetails.RowCount == 0)
             {
                 MessageBox.Show("Please input all fields");
             }
@@ -153,7 +155,7 @@ namespace SalesWinApp
                 {
                     row.Cells[0].Value = orderID;
                 }
-                details = (IEnumerable<Detail>)source.List;
+                updateDetails = dgvDetails.SelectedRows.Cast<Detail>().ToList();
             }
             if (CreateOrUpdate)
             {
@@ -163,7 +165,7 @@ namespace SalesWinApp
             } else
             {
                 orderRepository.UpdateOrder(Order);
-                orderDetailRepository.Update(details.ToArray());
+                orderDetailRepository.Update(updateDetails.ToArray());
                 this.DialogResult = DialogResult.OK;
             }
         }

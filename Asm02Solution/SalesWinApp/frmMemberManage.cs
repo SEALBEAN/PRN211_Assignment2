@@ -39,6 +39,7 @@ namespace SalesWinApp
 
         private void LoadMemberAccount(string content = null)
         {
+            _memberRepo = null;
             _memberRepo = new MemberRepo();
             var memberAccounts = _memberRepo.GetMembers();
             if (txtSearch.Text != "")

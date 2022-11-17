@@ -27,14 +27,10 @@ namespace DataAccess.Repository
             }
         }
 
-        public void Delete(int productId, int orderId)
+        public void Delete(Detail detail)
         {
-            var detail = _db.Details.FirstOrDefault(d => d.ProductId == productId && d.OrderId == orderId);
-            if (detail != null)
-            {
                 _db.Details.Remove(detail);
                 _db.SaveChanges();
-            }
         }
 
         public IEnumerable<Detail> GetDetails() => _db.Details.ToList();

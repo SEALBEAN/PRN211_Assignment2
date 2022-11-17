@@ -47,10 +47,9 @@ namespace SalesWinApp
                     }
                     else
                     {
-                        frmMainMember frmMainMember = new frmMainMember
-                        {
-                            acc = account.Email,
-                        };
+                        frmMainMember frmMainMember = new frmMainMember();
+                        frmMainMember.acc = account.Email;
+
                         this.Hide();
                         frmMainMember.Show();
                     }

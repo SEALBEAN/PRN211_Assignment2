@@ -14,9 +14,10 @@ namespace SalesWinApp
 {
     public partial class frmMainMember : Form
     {
-        private readonly IMemberRepo _memberAccount = new MemberRepo();
+        private IMemberRepo _memberAccount = new MemberRepo();
         private IMemberRepo _memberRepo = null;
-        public string acc;
+        public static string acc;
+        public static int accid;
         public frmMainMember()
         {
             InitializeComponent();
@@ -26,15 +27,22 @@ namespace SalesWinApp
         {
             Environment.Exit(0);
         }
-
         private void frmMainMember_Load(object sender, EventArgs e)
         {
+            LoadMainMember();
+        }
+
+
+        private void LoadMainMember()
+        {
+            _memberAccount = new MemberRepo();
             var account = _memberAccount.GetMembers().Where(a => a.Email == acc).FirstOrDefault();
             lbWelcome.Text = "Hello " + account.Email.ToString();
             txtEmail.Text = account.Email.ToString();
             txtCompany.Text = account.CompanyName.ToString();
             txtCity.Text = account.City.ToString();
             txtCountry.Text = account.Country.ToString();
+            accid = account.MemberId;
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)
@@ -45,7 +53,6 @@ namespace SalesWinApp
         }
         private void btnUpdateProfile_Click(object sender, EventArgs e)
         {
-            this.Hide();
             _memberRepo = new MemberRepo();
             Member mem = _memberRepo.GetMembers().Where(c => c.Email.ToString() == acc).First();
             frmUpdateProfile frmUpdateProfile = new frmUpdateProfile
@@ -56,10 +63,16 @@ namespace SalesWinApp
             {
                 /*frmMainMember frmMainMember = new frmMainMember();
                 frmMainMember.Refresh();*/
-                this.Refresh();
                 frmUpdateProfile.Close();
-                this.Show();
+                LoadMainMember();
             }
+        }
+
+        private void btnViewOrderDetail_Click(object sender, EventArgs e)
+        {
+            frmOrderDetail frmOrderDetail = new frmOrderDetail();
+            frmOrderDetail.Show();
+            this.Dispose();
         }
     }
 }

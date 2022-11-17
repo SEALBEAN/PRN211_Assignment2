@@ -108,7 +108,8 @@ namespace SalesWinApp
                 {
                     foreach (DataGridViewRow row in selectedRows)
                     {
-                        orderRepository.DeleteOrder((int)row.Cells[0].Value);
+                        IEnumerable<Order> or = orderRepository.GetOrders().Where(c => c.OrderId == (int)row.Cells[0].Value);
+                        orderRepository.DeleteOrder(or.First());
                     }
                     LoadOrder();
                 }

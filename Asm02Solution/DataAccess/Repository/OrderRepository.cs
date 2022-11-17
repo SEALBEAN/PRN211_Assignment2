@@ -18,14 +18,10 @@ namespace DataAccess.Repository
             }
         }
 
-        public void DeleteOrder(int orderId)
+        public void DeleteOrder(Order order)
         {
-            var order = _db.Orders.Find(orderId);
-            if (order != null)
-            {
                 _db.Orders.Remove(order);
                 _db.SaveChanges();
-            }
         }
 
         public IEnumerable<Order> GetOrders() => _db.Orders.ToList();

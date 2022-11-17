@@ -7,6 +7,6 @@ namespace DataAccess.Repository
         IEnumerable<Order> GetOrders();
         void AddOrder(Order order);
         void UpdateOrder(Order order);
-        void DeleteOrder(int orderId);
+        void DeleteOrder(Order order);
     }
 }

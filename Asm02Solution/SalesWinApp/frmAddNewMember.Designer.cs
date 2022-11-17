@@ -47,104 +47,111 @@
             // lbMemberID
             // 
             this.lbMemberID.AutoSize = true;
-            this.lbMemberID.Location = new System.Drawing.Point(50, 46);
+            this.lbMemberID.Location = new System.Drawing.Point(44, 34);
             this.lbMemberID.Name = "lbMemberID";
-            this.lbMemberID.Size = new System.Drawing.Size(84, 20);
+            this.lbMemberID.Size = new System.Drawing.Size(66, 15);
             this.lbMemberID.TabIndex = 0;
             this.lbMemberID.Text = "Member ID";
             // 
             // lbEmail
             // 
             this.lbEmail.AutoSize = true;
-            this.lbEmail.Location = new System.Drawing.Point(50, 98);
+            this.lbEmail.Location = new System.Drawing.Point(44, 74);
             this.lbEmail.Name = "lbEmail";
-            this.lbEmail.Size = new System.Drawing.Size(46, 20);
+            this.lbEmail.Size = new System.Drawing.Size(36, 15);
             this.lbEmail.TabIndex = 1;
             this.lbEmail.Text = "Email";
             // 
             // lbCompany
             // 
             this.lbCompany.AutoSize = true;
-            this.lbCompany.Location = new System.Drawing.Point(50, 149);
+            this.lbCompany.Location = new System.Drawing.Point(44, 112);
             this.lbCompany.Name = "lbCompany";
-            this.lbCompany.Size = new System.Drawing.Size(116, 20);
+            this.lbCompany.Size = new System.Drawing.Size(94, 15);
             this.lbCompany.TabIndex = 2;
             this.lbCompany.Text = "Company Name";
             // 
             // lbCity
             // 
             this.lbCity.AutoSize = true;
-            this.lbCity.Location = new System.Drawing.Point(50, 201);
+            this.lbCity.Location = new System.Drawing.Point(44, 151);
             this.lbCity.Name = "lbCity";
-            this.lbCity.Size = new System.Drawing.Size(34, 20);
+            this.lbCity.Size = new System.Drawing.Size(28, 15);
             this.lbCity.TabIndex = 3;
             this.lbCity.Text = "City";
             // 
             // lbCountry
             // 
             this.lbCountry.AutoSize = true;
-            this.lbCountry.Location = new System.Drawing.Point(50, 251);
+            this.lbCountry.Location = new System.Drawing.Point(44, 188);
             this.lbCountry.Name = "lbCountry";
-            this.lbCountry.Size = new System.Drawing.Size(60, 20);
+            this.lbCountry.Size = new System.Drawing.Size(50, 15);
             this.lbCountry.TabIndex = 4;
             this.lbCountry.Text = "Country";
             // 
             // lbPassword
             // 
             this.lbPassword.AutoSize = true;
-            this.lbPassword.Location = new System.Drawing.Point(50, 298);
+            this.lbPassword.Location = new System.Drawing.Point(44, 224);
             this.lbPassword.Name = "lbPassword";
-            this.lbPassword.Size = new System.Drawing.Size(70, 20);
+            this.lbPassword.Size = new System.Drawing.Size(57, 15);
             this.lbPassword.TabIndex = 5;
             this.lbPassword.Text = "Password";
             // 
             // txtMemberID
             // 
-            this.txtMemberID.Location = new System.Drawing.Point(210, 43);
+            this.txtMemberID.Location = new System.Drawing.Point(184, 32);
+            this.txtMemberID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMemberID.Name = "txtMemberID";
-            this.txtMemberID.Size = new System.Drawing.Size(223, 27);
+            this.txtMemberID.Size = new System.Drawing.Size(196, 23);
             this.txtMemberID.TabIndex = 6;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(210, 95);
+            this.txtEmail.Location = new System.Drawing.Point(184, 71);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(223, 27);
+            this.txtEmail.Size = new System.Drawing.Size(196, 23);
             this.txtEmail.TabIndex = 7;
             // 
             // txtCompany
             // 
-            this.txtCompany.Location = new System.Drawing.Point(210, 146);
+            this.txtCompany.Location = new System.Drawing.Point(184, 110);
+            this.txtCompany.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCompany.Name = "txtCompany";
-            this.txtCompany.Size = new System.Drawing.Size(223, 27);
+            this.txtCompany.Size = new System.Drawing.Size(196, 23);
             this.txtCompany.TabIndex = 8;
             // 
             // txtCity
             // 
-            this.txtCity.Location = new System.Drawing.Point(210, 198);
+            this.txtCity.Location = new System.Drawing.Point(184, 148);
+            this.txtCity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCity.Name = "txtCity";
-            this.txtCity.Size = new System.Drawing.Size(223, 27);
+            this.txtCity.Size = new System.Drawing.Size(196, 23);
             this.txtCity.TabIndex = 9;
             // 
             // txtCountry
             // 
-            this.txtCountry.Location = new System.Drawing.Point(210, 248);
+            this.txtCountry.Location = new System.Drawing.Point(184, 186);
+            this.txtCountry.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCountry.Name = "txtCountry";
-            this.txtCountry.Size = new System.Drawing.Size(223, 27);
+            this.txtCountry.Size = new System.Drawing.Size(196, 23);
             this.txtCountry.TabIndex = 10;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(210, 295);
+            this.txtPassword.Location = new System.Drawing.Point(184, 221);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(223, 27);
+            this.txtPassword.Size = new System.Drawing.Size(196, 23);
             this.txtPassword.TabIndex = 11;
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(111, 363);
+            this.btnSave.Location = new System.Drawing.Point(99, 272);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(94, 29);
+            this.btnSave.Size = new System.Drawing.Size(82, 22);
             this.btnSave.TabIndex = 12;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -152,9 +159,10 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(279, 363);
+            this.btnCancel.Location = new System.Drawing.Point(271, 272);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(94, 29);
+            this.btnCancel.Size = new System.Drawing.Size(82, 22);
             this.btnCancel.TabIndex = 13;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -162,9 +170,9 @@
             // 
             // frmAddNewMember
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(515, 424);
+            this.ClientSize = new System.Drawing.Size(435, 318);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtPassword);
@@ -179,6 +187,7 @@
             this.Controls.Add(this.lbCompany);
             this.Controls.Add(this.lbEmail);
             this.Controls.Add(this.lbMemberID);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmAddNewMember";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add New Member";
