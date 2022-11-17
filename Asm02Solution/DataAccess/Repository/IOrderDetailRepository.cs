@@ -4,8 +4,10 @@ namespace DataAccess.Repository;
 
 public interface IOrderDetailRepository
 {
-    List<Detail> GetDetails();
+    IEnumerable<Detail> GetDetails();
     void Add(Detail detail);
+    void Add(Detail[] detail);
     void Update(Detail detail);
+    void Update(Detail[] detail);
     void Delete(int productId, int orderId);
 }

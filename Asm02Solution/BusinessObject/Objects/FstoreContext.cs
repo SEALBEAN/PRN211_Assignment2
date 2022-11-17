@@ -111,7 +111,9 @@ public partial class FstoreContext : DbContext
                 .IsRequired()
                 .HasMaxLength(40)
                 .IsUnicode(false);
-            entity.Property(e => e.UnitPrice).HasColumnType("money");
+            entity.Property(e => e.UnitPrice)
+                .HasComputedColumnSql("([dbo].[FN_UnitPrice]([ProductId]))", true)
+                .HasColumnType("money");
             entity.Property(e => e.Weight)
                 .IsRequired()
                 .HasMaxLength(20)

@@ -51,7 +51,13 @@ namespace SalesWinApp
 
         private void btnOrderManage_Click(object sender, EventArgs e)
         {
-
+            frmOrderManagement frmOrderManagement = new frmOrderManagement();
+            this.Hide();
+            if(frmOrderManagement.ShowDialog() == DialogResult.Cancel)
+            {
+                frmOrderManagement.Hide();
+                this.Show();
+            }
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)
