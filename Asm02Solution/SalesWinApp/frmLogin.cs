@@ -40,10 +40,8 @@ namespace SalesWinApp
                     //check role admin
                     if (account.Email == "admin")
                     {
-                        frmMain frmMain = new frmMain()
-                        {
-                            acc = account.Email,
-                        };
+                        frmMain frmMain = new frmMain();
+                        frmMain.acc = account.Email;
                         this.Hide();
                         frmMain.Show();
                     }
